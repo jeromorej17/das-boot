@@ -1,5 +1,7 @@
 package com.boot.model;
 
+import org.springframework.beans.factory.annotation.Required;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -43,6 +45,7 @@ public class Shipwreck {
 		return name;
 	}
 
+	@Required
 	public void setName(String name) {
 		this.name = name;
 	}
